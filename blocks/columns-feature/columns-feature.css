@@ -1,0 +1,82 @@
+/* Block: columns-feature — featured story, two columns
+   Values extracted from source computed styles at wknd-trendsetters.site */
+
+.columns-feature {
+  color: var(--text-color);
+}
+
+/* Row: mobile-first stacked, becomes 2-col grid on desktop */
+.columns-feature > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.columns-feature > div > div {
+  flex: 1;
+}
+
+/* Image column */
+.columns-feature > div > .columns-feature-img-col {
+  order: 0;
+}
+
+.columns-feature > div > .columns-feature-img-col picture {
+  display: block;
+}
+
+.columns-feature > div > .columns-feature-img-col img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Text column */
+.columns-feature > div > div:not(.columns-feature-img-col) {
+  order: 1;
+}
+
+.columns-feature h2 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+/* Byline "By Taylor Brooks" */
+.columns-feature h2 + p {
+  margin: 32px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Post meta "June 12, 2024 • 4 min read" */
+.columns-feature h2 + p + p {
+  margin: 8px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--link-color);
+}
+
+@media (width >= 900px) {
+  .columns-feature > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .columns-feature h2 {
+    line-height: 44px;
+  }
+}

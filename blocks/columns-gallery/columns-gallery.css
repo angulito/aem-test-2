@@ -1,0 +1,53 @@
+/*
+ * columns-gallery: image-only gallery grid.
+ * Source: flat responsive grid of 8 square (1:1) cover images with
+ * rounded corners (20px) and small gaps (12px).
+ * 4 columns desktop, 2 tablet, 1 mobile portrait.
+ *
+ * EDS DOM: block > row(div) > cell(div) > picture > img (2 rows x 4 cells).
+ * Rows use display:contents so all 8 cells flatten into one grid on the
+ * block, giving a seamless grid identical to the source flat layout.
+ */
+
+.columns-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.columns-gallery > div {
+  display: contents;
+}
+
+.columns-gallery > div > div {
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.columns-gallery picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.columns-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (width >= 600px) {
+  .columns-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .columns-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "doc",
+  "sites": {
+    "aem-test-2": {
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json",
+      "previewOrg": "angulito",
+      "previewSite": "aem-test-2"
+    }
+  }
+}

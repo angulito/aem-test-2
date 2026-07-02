@@ -10,7 +10,34 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  toClassName,
+  readBlockConfig,
 } from './aem.js';
+
+/**
+ * Applies section metadata blocks as classes/styles on their parent section,
+ * then removes the block. Mirrors the standard EDS boilerplate behavior for
+ * projects whose aem.js decorateSections does not handle it natively.
+ * @param {Element} main The main container element
+ */
+function decorateSectionMetadata(main) {
+  main.querySelectorAll('div.section-metadata').forEach((metaBlock) => {
+    const section = metaBlock.closest('.section') || metaBlock.parentElement;
+    const meta = readBlockConfig(metaBlock);
+    Object.keys(meta).forEach((key) => {
+      if (key === 'style') {
+        const styles = meta.style
+          .split(',')
+          .map((style) => toClassName(style.trim()))
+          .filter((style) => style);
+        styles.forEach((style) => section.classList.add(style));
+      } else {
+        section.dataset[toClassName(key)] = meta[key];
+      }
+    });
+    metaBlock.remove();
+  });
+}
 
 /**
  * load fonts.css and set a session storage flag
@@ -118,14 +145,45 @@ function decorateButtons(main) {
 }
 
 /**
+ * Moves all the attributes from a given element to another given element.
+ * @param {Element} from the element to copy attributes from
+ * @param {Element} to the element to copy attributes to
+ * @param {string[]} [attributes] the attributes to copy (defaults to instrumentation attrs)
+ */
+export function moveAttributes(from, to, attributes) {
+  if (!attributes) {
+    // eslint-disable-next-line no-param-reassign
+    attributes = [...from.attributes]
+      .map(({ nodeName }) => nodeName)
+      .filter((attr) => attr.startsWith('data-aue-') || attr.startsWith('data-richtext-'));
+  }
+  attributes.forEach((attr) => {
+    const value = from.getAttribute(attr);
+    if (value) {
+      to.setAttribute(attr, value);
+      from.removeAttribute(attr);
+    }
+  });
+}
+
+/**
+ * Move instrumentation attributes from a given element to another given element.
+ * @param {Element} from the element to copy attributes from
+ * @param {Element} to the element to copy attributes to
+ */
+export function moveInstrumentation(from, to) {
+  moveAttributes(from, to);
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
-// eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionMetadata(main);
   decorateBlocks(main);
   decorateButtons(main);
 }
