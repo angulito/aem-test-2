@@ -1,0 +1,103 @@
+/* hero-intro — CSS derived from source computed styles */
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: var(--text-color);
+}
+
+/* Source order: text on the left, images on the right.
+   EDS DOM puts the images row first, so reorder. */
+.hero-intro > div:first-child { order: 2; } /* images */
+.hero-intro > div:last-child { order: 1; }  /* text  */
+
+/* --- Text column --- */
+.hero-intro h1 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.hero-intro > div:last-child p {
+  margin: 24px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--text-color);
+}
+
+/* --- Call-to-action links (source renders these as pill buttons) --- */
+.hero-intro > div:last-child p:has(a) {
+  display: inline-flex;
+  margin: 32px 16px 0 0;
+}
+
+.hero-intro > div:last-child p:has(a) a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 2px solid rgb(0 0 0);
+  border-radius: 9999px;
+  background-color: rgb(0 0 0);
+  color: rgb(255 255 255);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Second CTA is the outlined (white) variant */
+.hero-intro > div:last-child p:has(a):last-child a {
+  background-color: rgb(255 255 255);
+  color: rgb(0 0 0);
+}
+
+.hero-intro > div:last-child p:has(a) a:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* --- Image cluster --- */
+.hero-intro > div:first-child > div p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0;
+}
+
+.hero-intro > div:first-child picture {
+  display: block;
+  line-height: 0;
+}
+
+.hero-intro > div:first-child img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 268 / 179;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (width >= 900px) {
+  .hero-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .hero-intro h1 {
+    font-size: 56px;
+    line-height: 61.6px;
+    letter-spacing: -1.12px;
+  }
+}

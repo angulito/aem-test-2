@@ -1,0 +1,208 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "template": "home",
+  "documentPath": "/index",
+  "analyzedAt": "2026-09-02",
+  "projectType": "doc",
+  "variantMapping": {
+    "hero": "hero-intro",
+    "columns": "columns-article",
+    "cards": "cards-gallery",
+    "tabs": "tabs-profile",
+    "accordion": "accordion-faq"
+  },
+  "variantMappingNotes": "The 'hero' base maps to two distinct variants (hero-intro for the top intro, hero-banner for the closing full-bleed CTA). The 'cards' base maps to two distinct variants (cards-gallery for the captionless photo grid, cards-article for the linked article cards). Per-sequence blockName is authoritative.",
+  "blocksToUse": [
+    "hero-intro",
+    "columns-article",
+    "cards-gallery",
+    "tabs-profile",
+    "cards-article",
+    "accordion-faq",
+    "hero-banner"
+  ],
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "visualStyle": "light grey background (secondary-section)",
+      "sectionMetadata": {
+        "keep": true,
+        "style": "secondary",
+        "reason": "Single-block section with solid light-grey background and visible section padding (not full-bleed, not an image). The grey is section container styling rather than intrinsic hero design, so section-metadata is retained."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Large H1 'Fresh looks, bold stories, real life', supporting subheading paragraph, two buttons ('See case' primary, 'All stories' secondary) on the left; a stacked collage of three lifestyle cover images on the right.",
+          "decision": "block",
+          "blockName": "hero-intro",
+          "blockVariant": "hero-intro",
+          "baseBlock": "hero",
+          "reason": "hint=block; a prominent top-of-page intro with headline, supporting copy, CTAs and an image group. Matches the intro-hero variant.",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc2",
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "visualStyle": "white background, normal padding",
+      "sectionMetadata": {
+        "keep": false,
+        "reason": "Single-block section on default white background with no distinct container styling; the columns-article block owns its layout. Skip section-metadata."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Side-by-side layout: landscape cover image (adventure spots) in one column; in the other a breadcrumb trail (Home > Case studies), H2 'Fresh looks, bold moves, real stories', and author meta 'By Taylor Brooks / June 12, 2024 - 4 min read'.",
+          "decision": "block",
+          "blockName": "columns-article",
+          "blockVariant": "columns-article",
+          "baseBlock": "columns",
+          "reason": "hint=block; a two-column image + article-meta layout requiring side-by-side structure. Matches the article-meta columns variant.",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc3",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "visualStyle": "light grey background (secondary-section)",
+      "sectionMetadata": {
+        "keep": true,
+        "style": "secondary",
+        "reason": "Multi-sequence section (heading default content + gallery block) on solid light-grey background; styling applies to all content, so section-metadata is retained (Step 3e validation not required for multi-sequence sections)."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered H2 'Style in every snapshot' with subheading paragraph 'Peek the latest looks in action'.",
+          "decision": "default-content",
+          "reason": "Just a heading and a paragraph an author types normally. Centering is a section/CSS concern."
+        },
+        {
+          "sequence": 2,
+          "description": "Uniform grid of 8 square lifestyle images (no captions/text).",
+          "decision": "block",
+          "blockName": "cards-gallery",
+          "blockVariant": "cards-gallery",
+          "baseBlock": "cards",
+          "reason": "A repeating captionless image grid needs block structure. Image-only cards variant (photo gallery).",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc4",
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "visualStyle": "white background",
+      "sectionMetadata": {
+        "keep": false,
+        "reason": "Single-block section on default white background with no distinct container styling; the tabs block owns its layout. Skip section-metadata."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Tabbed testimonial switcher with four tabs (Alex Rivera / Streetwear Enthusiast, Taylor Kim / Casual Style Blogger, Jordan Ellis / Trend Spotter, Morgan Blake / Party Scene Curator). Each active tab shows a portrait image plus the person's name, role and a testimonial quote.",
+          "decision": "block",
+          "blockName": "tabs-profile",
+          "blockVariant": "tabs-profile",
+          "baseBlock": "tabs",
+          "reason": "hint=block; an interactive tab switcher revealing per-person testimonial panels. Matches the testimonial tabs variant.",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc5",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "visualStyle": "light grey background (secondary-section)",
+      "sectionMetadata": {
+        "keep": true,
+        "style": "secondary",
+        "reason": "Multi-sequence section (heading default content + article cards block) on solid light-grey background; styling applies to all content, so section-metadata is retained."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered H2 'Latest articles' with subheading paragraph 'Fresh looks, bold moves'.",
+          "decision": "default-content",
+          "reason": "A heading and paragraph an author types normally."
+        },
+        {
+          "sequence": 2,
+          "description": "Grid of 4 article cards; each card = image + category tag (e.g. 'Casual Cool') + date (e.g. 'May 12') + article title heading. Whole card is a link.",
+          "decision": "block",
+          "blockName": "cards-article",
+          "blockVariant": "cards-article",
+          "baseBlock": "cards",
+          "reason": "Repeating structured, linked cards with image + meta + title. Matches the article-listing cards variant.",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "id": "rc6",
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "visualStyle": "white background",
+      "sectionMetadata": {
+        "keep": false,
+        "reason": "Multi-sequence section on default white background with no distinct container styling. Skip section-metadata."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "H2 'Got questions? We've got answers.' with subheading 'Fashion FAQs, answered fast'.",
+          "decision": "default-content",
+          "reason": "A heading and paragraph an author types normally."
+        },
+        {
+          "sequence": 2,
+          "description": "Expandable FAQ list of 4 collapsible question/answer pairs.",
+          "decision": "block",
+          "blockName": "accordion-faq",
+          "blockVariant": "accordion-faq",
+          "baseBlock": "accordion",
+          "reason": "Interactive expand/collapse Q&A pairs require decoration. Matches the FAQ accordion variant.",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "id": "rc7",
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "visualStyle": "dark inverse-section with full-bleed background photo + dark overlay",
+      "sectionMetadata": {
+        "keep": false,
+        "reason": "Single-block section whose dark appearance comes from a full-bleed background photograph and overlay owned by the banner block itself (edge-to-edge, no visible section padding). Per Step 3e this is block-specific design, so section-metadata is skipped."
+      },
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Full-bleed background image (networking event) with dark overlay; white H2/H1-style heading 'Fresh looks, bold stories, real life', a longer descriptive subheading, and one CTA button 'See more'.",
+          "decision": "block",
+          "blockName": "hero-banner",
+          "blockVariant": "hero-banner",
+          "baseBlock": "hero",
+          "reason": "hint=block; a full-width closing CTA banner with background image, overlay text and a single button. Matches the cta-banner hero variant (distinct from the top intro-hero).",
+          "match": "reuse-existing-variant"
+        }
+      ]
+    }
+  ]
+}

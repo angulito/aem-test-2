@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-03T09:04:37.742Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "lower"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "article-cards",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "4-column grid, each card: image + tag + date + heading (linked)",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "latest articles grids",
+      "blog post card listings"
+    ],
+    "notSuitableFor": [
+      "image-only galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T09:05:00.000Z"
+  },
+  "variantName": "cards-v17blog",
+  "baseBlock": "cards"
+}

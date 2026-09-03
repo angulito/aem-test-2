@@ -1,0 +1,143 @@
+{
+  "url": "https://wknd.site/us/en.html",
+  "documentPath": "/us/en",
+  "title": "WKND Adventures and Travel",
+  "primaryUrl": "https://wknd.site/us/en.html",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.carousel.panelcontainer.cmp-carousel--hero.aem-GridColumn.aem-GridColumn--default--12",
+      "hint": "block",
+      "visualStyle": "full-width, edge-to-edge background photos with white content card overlay",
+      "overview": "Hero carousel with three rotating slides",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Rotating slider with 3 panels; each panel has a full-bleed background image, a large heading, a paragraph of descriptive text, and a single call-to-action button. Carousel indicators/tabs at bottom.",
+          "items": [
+            "WKND Adventures - Join us on one of our next adventures... - View Trips",
+            "San Diego Surf Spots - From the hippie beaches of Ocean Beach... - Full Article",
+            "Downhill Skiing Wyoming - A skiers paradise far from crowds... - View Trip"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc3",
+      "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.cmp-layout-container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.teaser.cmp-teaser--featured.aem-GridColumn.aem-GridColumn--default--12",
+      "hint": "block",
+      "visualStyle": "light grey (#f5f5f5) container, image left / text right, two-column layout",
+      "overview": "Featured article teaser",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Side-by-side layout: large image on the left, and on the right an eyebrow 'Featured Article', heading 'Camping in Western Australia', a paragraph of body text, and a 'Full Article' button.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc4-rc5-rc6",
+      "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.cmp-layout-container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image-list.list.aem-GridColumn.aem-GridColumn--default--12",
+      "hint": "block",
+      "visualStyle": "white background, standard section padding",
+      "overview": "Recent Articles - heading, 4-card article grid, and CTA button",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Underlined section heading 'Recent Articles'.",
+          "items": []
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 4 article cards, each with an image, a bold title, and a short description; each card links to an article.",
+          "items": [
+            "Ultimate Guide to LA Skateparks",
+            "Ski Touring",
+            "Arctic Surfing",
+            "San Diego Surf Spots"
+          ]
+        },
+        {
+          "sequenceNumber": 3,
+          "description": "Single 'All Articles' button (link).",
+          "items": []
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc8-rc9",
+      "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.teaser.cmp-teaser--hero.cmp-teaser--imagebottom.aem-GridColumn.aem-GridColumn--default--12",
+      "hint": "block",
+      "visualStyle": "full-width edge-to-edge background photo with white content card overlay",
+      "overview": "Next Adventures heading followed by a full-width hero teaser (Climbing New Zealand)",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Underlined section heading 'Next Adventures'.",
+          "items": []
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Full-width hero teaser with background image, heading 'Climbing New Zealand', a paragraph of descriptive text, and a 'See Trip' button.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc11-rc12-rc13",
+      "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > main.container.responsivegrid.cmp-layout-container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.image-list.list.aem-GridColumn.aem-GridColumn--default--12",
+      "hint": "block",
+      "visualStyle": "white background, standard section padding",
+      "overview": "Where do you want to go? - heading, 4-card adventures grid, and CTA button",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Section heading 'Where do you want to go?'.",
+          "items": []
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 4 adventure cards, each with an image, a bold title, and a short description; each card links to an adventure page.",
+          "items": [
+            "Yosemite Backpacking",
+            "Whistler Mountain Biking",
+            "West Coast Cycling",
+            "Tahoe Skiing"
+          ]
+        },
+        {
+          "sequenceNumber": 3,
+          "description": "Single 'All Trips' button (link).",
+          "items": []
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localBlocks": [
+      "cards",
+      "columns",
+      "hero",
+      "footer",
+      "header",
+      "fragment"
+    ],
+    "blockCollectionAvailable": [
+      "hero: large heading/text/buttons for page intro",
+      "cards: grid of items with images and text",
+      "columns: side-by-side content layout",
+      "carousel: rotating image/content displays",
+      "tabs: switchable content panels",
+      "accordion: expandable Q&A",
+      "quote: highlighted testimonials",
+      "fragment: reusable content sections"
+    ]
+  },
+  "notes": "Header (nav, language nav, sign-in, search) and footer (logo, nav, follow-us, legal text) are auto-populated and excluded from section analysis. No coverageGaps defined in page-templates.json, so no gap-page analysis was required."
+}

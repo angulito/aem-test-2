@@ -1,0 +1,79 @@
+/* cards-article — extracted computed styles from source (getComputedStyle @1440px) */
+
+/* grid container */
+.cards-article {
+  display: grid;
+  grid-template-columns: 276px 276px 276px 276px; /* desktop 4-col; responsive: mobile 1, tablet 2 */
+  gap: 16px;
+}
+
+/* card = <a class="article-card"> in source; li in EDS */
+.card {
+  display: block;
+  background-color: transparent;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 20px;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* image wrapper */
+.article-card-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.cover-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* body */
+.article-card-body { padding: 24px; text-align: start; }
+
+/* meta row */
+.article-card-meta {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  margin: 0 0 12px;
+}
+
+/* tag pill */
+.tag {
+  font-size: 12px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  line-height: 19.2px;
+  background-color: rgb(244, 254, 139);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  display: flex;
+}
+
+/* date */
+.date {
+  font-size: 14px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+  line-height: 22.4px;
+}
+
+/* title */
+h3 {
+  font-size: 18px;
+  font-family: Syncopate, sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 19.8px;
+  letter-spacing: normal;
+  margin: 0;
+}

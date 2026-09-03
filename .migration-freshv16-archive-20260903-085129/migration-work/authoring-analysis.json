@@ -1,0 +1,191 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "template": "home",
+  "documentPath": "/index",
+  "migrationNote": "FRESH migration into angulohe-trebdwknd-v15. Existing project blocks are NOT reused. Every block on the page is a NEW, distinctly-named variant.",
+  "variantMapping": {
+    "section1-hero": "hero-wintro15",
+    "section2-columns": "columns-wcase15",
+    "section3-cards": "cards-wsnap15",
+    "section4-tabs": "tabs-wprofile15",
+    "section5-cards": "cards-wblog15",
+    "section6-accordion": "accordion-wfaq15",
+    "section7-hero": "hero-wcta15"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "styling": {
+        "background": "light/grey (secondary-section)",
+        "sectionMetadata": "skip",
+        "reason": "Single-block hero section; intrinsic hero layout/styling, not a section container concern"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large heading, subheading, two CTA buttons plus a cluster of three cover images",
+          "decision": "block",
+          "blockName": "hero-wintro15",
+          "blockVariant": "hero-wintro15",
+          "baseBlock": "hero",
+          "reason": "Hint=block. Page-intro hero with heading, copy, CTAs and imagery"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "styling": {
+        "background": "white (section)",
+        "sectionMetadata": "skip",
+        "reason": "Single-block section, white background matches default; no container styling needed"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Cover image side-by-side with breadcrumbs, heading, author byline and read-time meta",
+          "decision": "block",
+          "blockName": "columns-wcase15",
+          "blockVariant": "columns-wcase15",
+          "baseBlock": "columns",
+          "reason": "Hint=block. Two-column side-by-side layout of image + article metadata"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "styling": {
+        "background": "light/grey (secondary-section)",
+        "sectionMetadata": "keep",
+        "reason": "Section contains default-content intro + a block; grey container styling applies to all content"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Style in every snapshot' and paragraph",
+          "decision": "default-content",
+          "reason": "Just a heading and paragraph an author types normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 8 square images",
+          "decision": "block",
+          "blockName": "cards-wsnap15",
+          "blockVariant": "cards-wsnap15",
+          "baseBlock": "cards",
+          "reason": "Hint=block. Repeating grid of image items (image-only gallery variant)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "styling": {
+        "background": "white (section)",
+        "sectionMetadata": "skip",
+        "reason": "Single-block section on default white background"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Four switchable profile/testimonial panels controlled by an avatar tab menu",
+          "decision": "block",
+          "blockName": "tabs-wprofile15",
+          "blockVariant": "tabs-wprofile15",
+          "baseBlock": "tabs",
+          "reason": "Hint=block. Interactive switchable panels"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "styling": {
+        "background": "light/grey (secondary-section)",
+        "sectionMetadata": "keep",
+        "reason": "Section contains default-content intro + a block; grey container styling applies to all content"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Latest articles' and paragraph",
+          "decision": "default-content",
+          "reason": "Just a heading and paragraph an author types normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 4 article cards with image, category tag, date and title; each card links to a post",
+          "decision": "block",
+          "blockName": "cards-wblog15",
+          "blockVariant": "cards-wblog15",
+          "baseBlock": "cards",
+          "reason": "Hint=block. Repeating structured article-card pattern"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "styling": {
+        "background": "white (section)",
+        "sectionMetadata": "skip",
+        "reason": "Section on default white background"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Got questions? We've got answers.' and subheading",
+          "decision": "default-content",
+          "reason": "Just a heading and subheading an author types normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "List of four expandable question/answer pairs",
+          "decision": "block",
+          "blockName": "accordion-wfaq15",
+          "blockVariant": "accordion-wfaq15",
+          "baseBlock": "accordion",
+          "reason": "Hint=block. Expandable Q&A pairs requiring interaction"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "styling": {
+        "background": "dark (inverse-section) with full-bleed background image + overlay",
+        "sectionMetadata": "skip",
+        "reason": "Full-bleed background image with overlay is the block's own design, not section container styling"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Full-width background image with dark overlay, heading, subheading and single button",
+          "decision": "block",
+          "blockName": "hero-wcta15",
+          "blockVariant": "hero-wcta15",
+          "baseBlock": "hero",
+          "reason": "Hint=block. Full-bleed dark CTA banner with background image"
+        }
+      ]
+    }
+  ],
+  "blocksToUse": [
+    "hero-wintro15",
+    "hero-wcta15",
+    "columns-wcase15",
+    "cards-wsnap15",
+    "cards-wblog15",
+    "tabs-wprofile15",
+    "accordion-wfaq15"
+  ]
+}

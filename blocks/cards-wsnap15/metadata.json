@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-03T08:43:32.240Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "image-gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "grid of square images only",
+    "buttonCount": 0,
+    "imageCount": 8
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "image-only gallery grids",
+      "snapshot/photo walls"
+    ],
+    "notSuitableFor": [
+      "cards with text and links"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T00:00:00.000Z"
+  },
+  "variantName": "cards-wsnap15",
+  "baseBlock": "cards"
+}

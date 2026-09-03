@@ -1,0 +1,159 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "documentPath": "/index",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "selector": "#main-content > header.section.secondary-section",
+      "styling": "light grey background (secondary-section)",
+      "sectionMetadata": { "style": "secondary" },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading, subheading, two CTA buttons on left; three stacked cover images on right",
+          "decision": "block",
+          "blockName": "hero-v17intro",
+          "blockVariant": "hero-v17intro",
+          "reason": "Two-column page-intro hero with heading, subheading, buttons and a media stack requires structure; hint=block. Not a background-image hero (light section), so section styling is a section-metadata concern.",
+          "note": "Single-block section; keep section-metadata (solid grey background with padding, not block-specific design)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc2",
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "styling": "white/default background",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Left: large cover image. Right: breadcrumbs, heading, author/date/read-time meta",
+          "decision": "block",
+          "blockName": "columns-v17article",
+          "blockVariant": "columns-v17article",
+          "reason": "Side-by-side image + text article-header layout requires a two-column structure; hint=block. Mixed content types (image vs rich text meta) fit columns better than cards.",
+          "note": "Single-block section on default white background; SKIP section-metadata"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc3",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "styling": "light grey background (secondary-section)",
+      "sectionMetadata": { "style": "secondary" },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Style in every snapshot' and short paragraph",
+          "decision": "default-content",
+          "reason": "Author can type a heading and paragraph normally; centering is a CSS/section concern"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Four-column grid of eight square images, no captions",
+          "decision": "block",
+          "blockName": "cards-v17gallery",
+          "blockVariant": "cards-v17gallery",
+          "reason": "Repeating grid of image-only items is a cards (no-text/gallery) pattern; hint=block"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc4",
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "styling": "white/default background",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Tabbed testimonial switcher: four people (avatar + name + role) revealing panels with image, name, role, quote",
+          "decision": "block",
+          "blockName": "tabs-v17voices",
+          "blockVariant": "tabs-v17voices",
+          "reason": "Interactive switchable panels require decoration; hint=block. Obvious match with tabs.",
+          "note": "Single-block section on default white background; SKIP section-metadata"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc5",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "styling": "light grey background (secondary-section)",
+      "sectionMetadata": { "style": "secondary" },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Latest articles' and short paragraph",
+          "decision": "default-content",
+          "reason": "Author can type a heading and paragraph normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Four-column grid of article cards: image, category tag, date, heading (linked)",
+          "decision": "block",
+          "blockName": "cards-v17blog",
+          "blockVariant": "cards-v17blog",
+          "reason": "Repeating structured items with image + tag + date + title is a classic cards pattern; hint=block"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "id": "rc6",
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "styling": "white/default background",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Got questions?' and subheading",
+          "decision": "default-content",
+          "reason": "Author types heading and paragraph normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Expandable FAQ list of four question/answer pairs",
+          "decision": "block",
+          "blockName": "accordion-v17faq",
+          "blockVariant": "accordion-v17faq",
+          "reason": "Expandable Q&A pairs need decoration/interaction; hint=block. Obvious match with accordion."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "id": "rc7",
+      "selector": "#main-content > section.section.inverse-section",
+      "styling": "dark/inverse background; full-bleed background image with dark overlay",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Full-width CTA banner: background image + dark overlay, heading, paragraph, single button",
+          "decision": "block",
+          "blockName": "hero-v17cta",
+          "blockVariant": "hero-v17cta",
+          "reason": "Full-bleed banner with background image, heading, text and CTA is a hero pattern; hint=block.",
+          "note": "Single-block section; background is a full-bleed image (block-specific design), so SKIP section-metadata"
+        }
+      ]
+    }
+  ],
+  "blocksToUse": ["hero-v17intro", "columns-v17article", "cards-v17gallery", "tabs-v17voices", "cards-v17blog", "accordion-v17faq", "hero-v17cta"],
+  "variantMapping": {
+    "hero (section 1 intro)": "hero-v17intro",
+    "columns (section 2 article header)": "columns-v17article",
+    "cards (section 3 gallery)": "cards-v17gallery",
+    "tabs (section 4 testimonials)": "tabs-v17voices",
+    "cards (section 5 articles)": "cards-v17blog",
+    "accordion (section 6 faq)": "accordion-v17faq",
+    "hero (section 7 CTA banner)": "hero-v17cta"
+  },
+  "step3eValidation": [
+    { "section": 1, "block": "hero-v17intro", "background": "solid light grey with padding", "decision": "KEEP section-metadata (style=secondary)" },
+    { "section": 2, "block": "columns-v17article", "background": "white default", "decision": "SKIP section-metadata" },
+    { "section": 4, "block": "tabs-v17voices", "background": "white default", "decision": "SKIP section-metadata" },
+    { "section": 7, "block": "hero-v17cta", "background": "full-bleed image + overlay", "decision": "SKIP section-metadata (block-specific design)" }
+  ]
+}

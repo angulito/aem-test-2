@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-03T09:04:37.756Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "testimonials",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "tab menu of people (avatar + name + role); panel with image + name + role + quote",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "testimonial switchers",
+      "people/profile spotlights"
+    ],
+    "notSuitableFor": [
+      "simple non-interactive content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T09:05:00.000Z"
+  },
+  "variantName": "tabs-v17voices",
+  "baseBlock": "tabs"
+}

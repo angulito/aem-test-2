@@ -1,0 +1,148 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "documentPath": "/index",
+  "analyzedAt": "2026-09-02",
+  "sections": [
+    {
+      "id": "rc1",
+      "index": 1,
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "background": "light grey (secondary-section)",
+      "layout": "2x1 (text left, image cluster right)",
+      "overview": "Hero intro: large heading, subheading, two CTA buttons on the left; a stacked cluster of three lifestyle images on the right.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Large H1 heading, supporting subheading paragraph, and two call-to-action buttons (primary 'See case', secondary 'All stories'), alongside a group of three cover images."
+        }
+      ]
+    },
+    {
+      "id": "rc2",
+      "index": 2,
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "background": "white (default)",
+      "layout": "2x1 (image left, text right)",
+      "overview": "Case-study intro: a large 3x2 cover image beside a text column containing breadcrumbs, an H2 heading, and author/date/read-time byline.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Side-by-side layout: cover image on one side; on the other side breadcrumbs (Home / Case studies), an H2 heading, and byline metadata (author name, date, read time)."
+        }
+      ]
+    },
+    {
+      "id": "rc3",
+      "index": 3,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "background": "light grey (secondary-section)",
+      "layout": "centered header + 4-column image grid (8 images)",
+      "overview": "'Style in every snapshot' gallery: centered heading and subtext followed by a responsive grid of eight square lifestyle images.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered H2 heading ('Style in every snapshot') with a supporting paragraph ('Peek the latest looks in action')."
+        },
+        {
+          "sequence": 2,
+          "description": "Responsive grid of eight square (1x1) cover images, no text per item — a photo gallery."
+        }
+      ]
+    },
+    {
+      "id": "rc4",
+      "index": 4,
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "background": "white (default)",
+      "layout": "tabbed content with 4 tabs",
+      "overview": "Interactive profile/testimonial tabs: a large content panel (portrait image + name, role, quote) switchable via four tab buttons, each showing an avatar, name, and role.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Tabbed interface with four switchable panels. Each panel shows a person's photo, name, role, and a testimonial quote. Tab menu buttons show avatar + name + role."
+        }
+      ]
+    },
+    {
+      "id": "rc5",
+      "index": 5,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "background": "light grey (secondary-section)",
+      "layout": "centered header + 4-column card grid",
+      "overview": "'Latest articles' listing: centered heading and subtext followed by a grid of four article cards, each with an image, category tag, date, and title, linking to a blog post.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered H2 heading ('Latest articles') with supporting paragraph ('Fresh looks, bold moves')."
+        },
+        {
+          "sequence": 2,
+          "description": "Grid of four article cards; each card is a link containing an image, a category tag, a date, and a title heading."
+        }
+      ]
+    },
+    {
+      "id": "rc6",
+      "index": 6,
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "background": "white (default)",
+      "layout": "2x1 (heading block left, FAQ list right)",
+      "overview": "FAQ section: an H2 heading and subheading beside an expandable list of four question/answer items (details/summary).",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "H2 heading ('Got questions? We've got answers.') and supporting subheading ('Fashion FAQs, answered fast')."
+        },
+        {
+          "sequence": 2,
+          "description": "Expandable list of four question-and-answer items; each row has a clickable question and a collapsible answer paragraph."
+        }
+      ]
+    },
+    {
+      "id": "rc7",
+      "index": 7,
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "background": "dark (inverse-section) with full-bleed background image and overlay",
+      "layout": "full-width banner with background image + overlaid text",
+      "overview": "Closing CTA banner: full-bleed background image with a dark overlay, an overlaid H1 heading, subheading, and a single call-to-action button ('See more').",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Full-width banner with a background image and dark overlay; overlaid H1 heading, subheading paragraph, and one call-to-action button."
+        }
+      ]
+    }
+  ],
+  "coverageGaps": [],
+  "blockInventory": {
+    "localBlocks": [
+      "header",
+      "footer",
+      "fragment",
+      "hero",
+      "cards",
+      "columns"
+    ],
+    "note": "Existing hyphenated variant directories (hero-intro, hero-banner, cards-article, cards-gallery, columns-article, tabs-profile, accordion-faq) are present from prior migration attempts but are NOT reused for this fresh migration per instructions.",
+    "blockCollection": [
+      { "name": "hero", "purpose": "Prominent headline, image, and CTA at top of page or as banner" },
+      { "name": "columns", "purpose": "Side-by-side content layout" },
+      { "name": "cards", "purpose": "Grid of items each with image/title/text; 'no images' variant available" },
+      { "name": "tabs", "purpose": "Switchable content panels via tab labels" },
+      { "name": "accordion", "purpose": "Collapsible question/answer or topic sections" },
+      { "name": "carousel", "purpose": "Rotating/swipable slides" },
+      { "name": "table", "purpose": "Tabular data" },
+      { "name": "video", "purpose": "Embedded stand-alone video" },
+      { "name": "embed", "purpose": "External video/social embeds" },
+      { "name": "search", "purpose": "Site content search" }
+    ]
+  }
+}

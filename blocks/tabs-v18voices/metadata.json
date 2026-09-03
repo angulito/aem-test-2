@@ -1,0 +1,36 @@
+{
+  "variantName": "tabs-v18voices",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-09-03T13:25:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "originPage": "home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "testimonials",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "switchable panels each with portrait + name + role + quote; avatar tab navigation",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "testimonial switchers",
+      "people/voices spotlights with tabs"
+    ],
+    "notSuitableFor": [
+      "simple text tab groups without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T13:25:00.000Z"
+  }
+}

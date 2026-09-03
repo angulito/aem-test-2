@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-03T08:43:26.659Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "upper"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "wide",
+    "purpose": "case-study-feature",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + breadcrumbs + heading + author meta",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "article/case-study feature rows",
+      "image beside metadata layouts"
+    ],
+    "notSuitableFor": [
+      "equal-weight text-only columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T00:00:00.000Z"
+  },
+  "variantName": "columns-wcase15",
+  "baseBlock": "columns"
+}

@@ -1,0 +1,33 @@
+.columns-wcase15 > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-wcase15 img {
+  width: 100%;
+}
+
+.columns-wcase15 > div > div {
+  order: 1;
+}
+
+.columns-wcase15 > div > .columns-wcase15-img-col {
+  order: 0;
+}
+
+.columns-wcase15 > div > .columns-wcase15-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-wcase15 > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-wcase15 > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

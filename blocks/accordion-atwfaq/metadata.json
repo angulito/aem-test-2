@@ -1,0 +1,39 @@
+{
+  "variantName": "accordion-atwfaq",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-09-03T13:37:44.008Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "originPage": "WKND Trendsetters home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "faq",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "question (summary) | answer (body) per item",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "FAQ sections",
+      "expandable Q&A disclosure lists"
+    ],
+    "notSuitableFor": [
+      "tabbed content",
+      "image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T13:37:44.008Z"
+  }
+}

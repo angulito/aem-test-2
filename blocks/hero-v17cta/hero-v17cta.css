@@ -1,0 +1,47 @@
+.hero-v17cta-container .hero-v17cta-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-v17cta {
+  position: relative;
+  padding: 40px 24px;
+  min-height: 300px;
+}
+
+.hero-v17cta h1,
+.hero-v17cta h2,
+.hero-v17cta h3,
+.hero-v17cta h4,
+.hero-v17cta h5,
+.hero-v17cta h6,
+.hero-v17cta p {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--background-color);
+}
+
+.hero-v17cta.no-image * {
+  color: var(--text-color);
+}
+
+.hero-v17cta picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero-v17cta img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width >= 900px) {
+  .hero-v17cta {
+    padding: 40px 32px;
+  }
+}

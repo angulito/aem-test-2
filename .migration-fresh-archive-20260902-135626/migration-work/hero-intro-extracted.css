@@ -1,0 +1,30 @@
+/* Block: hero-intro -- CSS extracted from source computed styles */
+/* SECTION background rgb(245,245,245), padding 128px 0 (handled by .section.grey globally) */
+
+.hero-intro { color: rgb(0,0,0); max-width: 1200px; }
+.hero-intro-grid { display: grid; grid-template-columns: 544px 544px; gap: 64px; align-items: center; }
+
+.hero-intro h1 {
+  font-size: 56px;
+  font-weight: 700;
+  font-family: Syncopate, sans-serif;
+  line-height: 61.6px;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  color: rgb(0,0,0);
+}
+.hero-intro p {
+  font-size: 18px;
+  font-family: "Instrument Sans", sans-serif;
+  line-height: 28.8px;
+  color: rgb(0,0,0);
+  margin: 24px 0 0;
+}
+/* button-group: flex row, gap 16px, margin-top 32px */
+.hero-intro a { /* first: solid black */
+  background-color: rgb(0,0,0); color: rgb(255,255,255);
+  padding: 12px 24px; border: 2px solid rgb(0,0,0); border-radius: 9999px;
+  font-size: 14px; font-weight: 600; text-decoration: none;
+}
+/* second link: bg rgb(255,255,255) color rgb(0,0,0) border 2px solid black */
+/* image cluster: grid 268px 268px, gap 8px, rows 178.656px; img radius 20px object-fit cover aspect 1.5 */

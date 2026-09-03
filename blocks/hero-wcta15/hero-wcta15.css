@@ -1,0 +1,47 @@
+.hero-wcta15-container .hero-wcta15-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-wcta15 {
+  position: relative;
+  padding: 40px 24px;
+  min-height: 300px;
+}
+
+.hero-wcta15 h1,
+.hero-wcta15 h2,
+.hero-wcta15 h3,
+.hero-wcta15 h4,
+.hero-wcta15 h5,
+.hero-wcta15 h6,
+.hero-wcta15 p {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--background-color);
+}
+
+.hero-wcta15.no-image * {
+  color: var(--text-color);
+}
+
+.hero-wcta15 picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero-wcta15 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width >= 900px) {
+  .hero-wcta15 {
+    padding: 40px 32px;
+  }
+}

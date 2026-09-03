@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-atwblog",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-09-03T13:37:44.008Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "originPage": "WKND Trendsetters home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "article-list",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + tag + date + title per card",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "blog/article listings",
+      "content cards with category tag and title"
+    ],
+    "notSuitableFor": [
+      "image-only galleries",
+      "interactive tabs"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T13:37:44.008Z"
+  }
+}

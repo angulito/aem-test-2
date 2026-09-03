@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.wknd-trendsetters.site/"
+      ],
+      "representativeUrl": "https://www.wknd-trendsetters.site/",
+      "description": "WKND Trendsetters home page: intro hero, article header, image gallery, testimonial tabs, latest article cards, FAQ accordion, and CTA banner.",
+      "urlPattern": "/",
+      "blocks": [
+        {
+          "name": "hero-v17intro",
+          "instances": ["#main-content > header.section.secondary-section > div.container > div.grid-layout"]
+        },
+        {
+          "name": "columns-v17article",
+          "instances": ["#main-content > section.section:nth-of-type(1) > div.container > div.grid-layout"]
+        },
+        {
+          "name": "cards-v17gallery",
+          "instances": ["#main-content > section.section.secondary-section:nth-of-type(2) > div.container > div.grid-layout.desktop-4-column.tablet-2-column-1.mobile-portrait-1-column.grid-gap-sm"]
+        },
+        {
+          "name": "tabs-v17voices",
+          "instances": ["#main-content > section.section:nth-of-type(3) > div.container > div.tabs-wrapper"]
+        },
+        {
+          "name": "cards-v17blog",
+          "instances": ["#main-content > section.section.secondary-section:nth-of-type(4) > div.container > div.grid-layout.desktop-4-column.tablet-2-column-1.mobile-portrait-1-column.grid-gap-md"]
+        },
+        {
+          "name": "accordion-v17faq",
+          "instances": ["#main-content > section.section:nth-of-type(5) > div.container > div.grid-layout"]
+        },
+        {
+          "name": "hero-v17cta",
+          "instances": ["#main-content > section.section.inverse-section > div.container > div.grid-layout.desktop-1-column"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc1",
+          "name": "Intro hero",
+          "selector": "#main-content > header.section.secondary-section",
+          "style": "secondary",
+          "blocks": ["hero-v17intro"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc2",
+          "name": "Article header",
+          "selector": "#main-content > section.section:nth-of-type(1)",
+          "style": null,
+          "blocks": ["columns-v17article"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc3",
+          "name": "Snapshot gallery",
+          "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+          "style": "secondary",
+          "blocks": ["cards-v17gallery"],
+          "defaultContent": ["#main-content > section.section.secondary-section:nth-of-type(2) > div.container > div.utility-text-align-center.utility-margin-bottom-8rem"]
+        },
+        {
+          "id": "rc4",
+          "name": "Testimonial tabs",
+          "selector": "#main-content > section.section:nth-of-type(3)",
+          "style": null,
+          "blocks": ["tabs-v17voices"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "Latest articles",
+          "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+          "style": "secondary",
+          "blocks": ["cards-v17blog"],
+          "defaultContent": ["#main-content > section.section.secondary-section:nth-of-type(4) > div.container > div.utility-text-align-center"]
+        },
+        {
+          "id": "rc6",
+          "name": "FAQ",
+          "selector": "#main-content > section.section:nth-of-type(5)",
+          "style": null,
+          "blocks": ["accordion-v17faq"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc7",
+          "name": "CTA banner",
+          "selector": "#main-content > section.section.inverse-section",
+          "style": null,
+          "blocks": ["hero-v17cta"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

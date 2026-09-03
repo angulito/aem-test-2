@@ -1,0 +1,62 @@
+{
+  "url": "https://wknd.site/us/en.html",
+  "source": "local",
+  "detection": {
+    "isError": false,
+    "isBotProtection": false
+  },
+  "timestamp": "2026-09-02T09:37:20.139Z",
+  "paths": {
+    "documentPath": "/us/en",
+    "htmlFilePath": "/us/en.plain.html",
+    "mdFilePath": "/us/en.md",
+    "dirPath": "/us",
+    "filename": "en"
+  },
+  "screenshot": "migration-work/screenshot.png",
+  "html": {
+    "filePath": "migration-work/cleaned.html",
+    "size": 64394
+  },
+  "metadata": {
+    "title": "WKND Adventures and Travel",
+    "keywords": "Attract",
+    "description": "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.",
+    "template": "landing-page-template",
+    "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+    "content-page-ref": "fs0spg4P27QUq9aWzIEfUlFItLej1Yox3nmST0jUya7ihNHPbJpqeM3eRSdeRAXP",
+    "theme-color": "#FFEA00",
+    "msapplication-TileColor": "#FFFFFF",
+    "msapplication-TileImage": "/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-152.png",
+    "canonical": "/us/en.html"
+  },
+  "images": {
+    "count": 16,
+    "mapping": {
+      "https://wknd.site/us/en/_jcr_content/root/container/container/teaser.coreimg.60.1600.jpeg/1660323792132/adobestock-156407519.jpeg": "./images/7127477308ad48f1551c4b916ed440b0.jpg",
+      "https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/header/master/_jcr_content/root/container/container_1195249223/image.coreimg.svg/1594412560447/wknd-logo-dk.svg": "./images/54c4f7fc059fad79b6dd73f8555eac80.png",
+      "https://wknd.site/us/en/_jcr_content/root/container/carousel/item_1571954853062.coreimg.60.1600.jpeg/1660323801921/adobestock-216674449.jpeg": "./images/354ec5e7252bd9a1a7d3fc9d13352de1.jpg",
+      "https://wknd.site/us/en/magazine/arctic-surfing/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789770/surfer-wave-02.jpeg": "./images/5542dac94ba213f37cfb555a8ae44ebe.jpg",
+      "https://wknd.site/us/en/magazine/ski-touring/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323789866/skitouring5sjoeberg.jpeg": "./images/ef65d9d59844273e88909f6ebc893048.jpg",
+      "https://wknd.site/us/en/adventures/yosemite-backpacking/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323790695/adobestock-231698835.jpeg": "./images/8141e6597e5a7d1f86eaea52a49a6ea3.jpg",
+      "https://wknd.site/us/en/magazine/san-diego-surf/_jcr_content/root/container/container/contentfragment/par1/image.coreimg.60.1600.jpeg/1660323790169/adobestock-164735399.jpeg": "./images/b07bb0854a5959f240e2d246d4c0ef57.jpg",
+      "https://wknd.site/us/en/adventures/west-coast-cycling/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323786740/adobestock-151584995.jpeg": "./images/f0a50fef65cc130920f1ddaf1b8b790f.jpg",
+      "https://wknd.site/content/experience-fragments/wknd/language-masters/en/site/footer/master/_jcr_content/root/container/container/image.coreimg.svg/1594412963641/wknd-logo-light.svg": "./images/a39069e94dbfa5483f389ac36e8d1668.png",
+      "https://wknd.site/us/en/magazine/guide-la-skateparks/_jcr_content/root/container/container/contentfragment/par2/image_copy.coreimg.60.1600.png/1660323783259/article-01-picture-01.png": "./images/93b207d75023097c19e52ec2faaee975.png",
+      "https://wknd.site/us/en/adventures/tahoe-skiing/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323785476/adobestock-184591344.jpeg": "./images/e828cf52b177c8aab1da090633123152.jpg",
+      "https://dpm.demdex.net/ibs:dpid=411&dpuuid=apfuSgAAAEaOVxOe": "./images/8756d406418261564a83cd2b4fb6dc8d.png",
+      "https://wknd.site/us/en/_jcr_content/root/container/teaser.coreimg.60.1600.jpeg/1660323789729/adobestock-140634652.jpeg": "./images/5b2defb1d481f6fe9adf79733064184d.jpg",
+      "https://wknd.site/etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg": "./images/feee51b86bac2d144f209d5990c9f13e.png",
+      "https://wknd.site/us/en/adventures/whistler-mountain-biking/_jcr_content/root/container/carousel/image.coreimg.60.1600.jpeg/1660323789625/adobestock-122615840.jpeg": "./images/b77bacc8850b5c11136acc28ecad2c0d.jpg",
+      "https://wkndsitewknd887971p.112.2o7.net/b/ss/wkndsitewknd887971p/1/JS-2.23.0-LDQM/s75349728422518?AQB=1&ndh=1&pf=1&t=2%2F8%2F2026%209%3A37%3A14%203%200&mid=17999878853717554181345099969886864640&aamlh=7&ce=UTF-8&pageName=WKND%20Adventures%20and%20Travel&g=https%3A%2F%2Fwknd.site%2Fus%2Fen.html&cc=USD&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&s=1280x720&c=24&j=1.6&v=N&k=Y&bw=1280&bh=720&mcorgid=F93A38475DCAB3970A495E80%40AdobeOrg&AQE=1": "./images/16a0e33ca14e88c19c7c13fa4dafd32b.png"
+    },
+    "stats": {
+      "total": 17,
+      "converted": 5,
+      "skipped": 11,
+      "failed": 1,
+      "tooLarge": 0,
+      "limitReached": 0
+    }
+  }
+}

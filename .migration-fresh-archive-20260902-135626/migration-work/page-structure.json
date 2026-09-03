@@ -1,0 +1,148 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "template": "home",
+  "documentPath": "/index",
+  "analyzedAt": "2026-09-02",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "visualStyle": "light grey background (secondary-section), spacious top-of-page intro",
+      "layout": "2x1 (text left, image collage right)",
+      "overview": "Page hero/intro: large headline, supporting paragraph, two call-to-action buttons on the left; a stacked collage of three lifestyle photos on the right.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Large heading 'Fresh looks, bold stories, real life', descriptive subheading paragraph, and two buttons ('See case' primary, 'All stories' secondary), displayed alongside a group of three cover images (hip-hop dance, family vacation, music concert)."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc2",
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "visualStyle": "white background, normal padding",
+      "layout": "2x1 (image left, text right)",
+      "overview": "Featured case-study teaser: a large landscape cover image beside breadcrumbs, an H2 heading, and author byline metadata (author name, date, read time).",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Side-by-side layout: a landscape cover image (adventure spots) in one column; in the other column a breadcrumb trail (Home > Case studies), heading 'Fresh looks, bold moves, real stories', and author meta line 'By Taylor Brooks / June 12, 2024 • 4 min read'."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc3",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "visualStyle": "light grey background (secondary-section)",
+      "layout": "centered heading block + 4x2 image grid",
+      "overview": "Photo gallery 'Style in every snapshot': centered heading and subheading, followed by a uniform 8-image grid (4 columns x 2 rows) of lifestyle photos with no captions.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered heading 'Style in every snapshot' with subheading paragraph 'Peek the latest looks in action'."
+        },
+        {
+          "sequence": 2,
+          "description": "Uniform grid of 8 square lifestyle images (hip-hop dance, beach, concert crowd, campus life, gaming, mobile game, fashion inspiration, campus tour), no text/captions."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc4",
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "visualStyle": "white background",
+      "layout": "tabbed interface (content panel + tab menu row of 4)",
+      "overview": "Testimonials presented as a tabbed interface: four selectable people tabs (avatar + name + role), each revealing a panel with a large portrait image, name, role, and a quote.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Tabbed testimonial switcher with four tabs (Alex Rivera / Streetwear Enthusiast, Taylor Kim / Casual Style Blogger, Jordan Ellis / Trend Spotter, Morgan Blake / Party Scene Curator). Each active tab shows a portrait image plus the person's name, role, and a testimonial quote."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc5",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "visualStyle": "light grey background (secondary-section)",
+      "layout": "centered heading block + 4-column card grid",
+      "overview": "'Latest articles' section: centered heading and subheading, followed by four article cards, each with an image, a category tag + date meta row, and an article title. Each card is a link.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered heading 'Latest articles' with subheading paragraph 'Fresh looks, bold moves'."
+        },
+        {
+          "sequence": 2,
+          "description": "Grid of 4 article cards; each card = image + category tag (e.g. 'Casual Cool') + date (e.g. 'May 12') + article title heading (e.g. 'Tennis style, redefined'). Whole card is a link."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "id": "rc6",
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "visualStyle": "white background",
+      "layout": "2x1 (heading/intro left, expandable FAQ list right)",
+      "overview": "FAQ section: heading 'Got questions? We've got answers.' with a subheading on one side; an expandable list of four question/answer items (details/summary) on the other.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Heading 'Got questions? We've got answers.' with subheading 'Fashion FAQs, answered fast'."
+        },
+        {
+          "sequence": 2,
+          "description": "Expandable FAQ list of 4 collapsible question/answer pairs (How do I spot the latest trends?; Can I share my own outfit pics?; Where do you find your style inspo?; How can I join your community?)."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "id": "rc7",
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "visualStyle": "dark background (inverse-section) with full-bleed background photo + dark overlay",
+      "layout": "3x1 / full-width overlay banner",
+      "overview": "Closing call-to-action banner: full-width background photograph with a dark overlay, large white headline 'Fresh looks, bold stories, real life', descriptive subheading, and a single 'See more' button.",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Full-bleed background image (networking event) with dark overlay; white heading 'Fresh looks, bold stories, real life', a longer descriptive subheading about the case study, and one CTA button 'See more'."
+        }
+      ]
+    }
+  ],
+  "coverageGaps": [],
+  "blockInventory": {
+    "localBlocks": [
+      { "name": "cards", "purpose": "Grid of items with image + title + description" },
+      { "name": "columns", "purpose": "Side-by-side content layout" },
+      { "name": "footer", "purpose": "Site footer (auto-populated)" },
+      { "name": "fragment", "purpose": "Reusable content sections" },
+      { "name": "header", "purpose": "Site header/navigation (auto-populated)" },
+      { "name": "hero", "purpose": "Large banner: image, headline, optional CTA" }
+    ],
+    "blockCollectionAvailable": [
+      { "name": "hero", "purpose": "Prominent image + headline + optional CTA at top of page" },
+      { "name": "columns", "purpose": "Content side by side in multiple columns" },
+      { "name": "cards", "purpose": "Card-based grid, each with image/title/text" },
+      { "name": "tabs", "purpose": "Switchable content panels via tab labels" },
+      { "name": "accordion", "purpose": "Collapsible question/answer or content sections" },
+      { "name": "carousel", "purpose": "Rotating/swipable slides" },
+      { "name": "table", "purpose": "Tabular data grid" },
+      { "name": "video", "purpose": "Stand-alone embedded video" },
+      { "name": "embed", "purpose": "Embed external video/social content" },
+      { "name": "search", "purpose": "Site content search input" }
+    ]
+  }
+}

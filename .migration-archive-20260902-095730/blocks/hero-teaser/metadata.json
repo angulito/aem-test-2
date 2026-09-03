@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-teaser",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-09-02T09:39:47.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd.site/us/en.html",
+    "originPage": "WKND Adventures and Travel home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + description + 1 CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "full-width single hero teasers with background image",
+      "mid-page promotional banners with CTA",
+      "section intro banners"
+    ],
+    "notSuitableFor": [
+      "multi-slide rotating banners (use carousel-hero)",
+      "repeating card grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-02T09:39:47.000Z"
+  }
+}

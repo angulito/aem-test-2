@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-atwart",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-09-03T13:37:44.008Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "originPage": "WKND Trendsetters home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "article-header",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image | breadcrumbs + heading + author meta",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "side-by-side image + text article headers",
+      "featured content intros"
+    ],
+    "notSuitableFor": [
+      "repeating item grids",
+      "interactive panels"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T13:37:44.008Z"
+  }
+}

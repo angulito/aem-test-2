@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.wknd-trendsetters.site/"
+      ],
+      "representativeUrl": "https://www.wknd-trendsetters.site/",
+      "urlPattern": "/",
+      "description": "WKND Trendsetters homepage: hero intro, featured article header, snapshot gallery, testimonial tabs, latest articles, FAQ accordion, and CTA banner",
+      "blocks": [
+        {
+          "name": "hero-atwintro",
+          "instances": [
+            "#main-content > header.section.secondary-section .grid-layout"
+          ]
+        },
+        {
+          "name": "columns-atwart",
+          "instances": [
+            "#main-content > section.section:nth-of-type(1) .grid-layout"
+          ]
+        },
+        {
+          "name": "cards-atwgal",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(2) .grid-layout.desktop-4-column"
+          ]
+        },
+        {
+          "name": "tabs-atwvoices",
+          "instances": [
+            "#main-content > section.section:nth-of-type(3) .tabs-wrapper"
+          ]
+        },
+        {
+          "name": "cards-atwblog",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(4) .grid-layout.desktop-4-column"
+          ]
+        },
+        {
+          "name": "accordion-atwfaq",
+          "instances": [
+            "#main-content > section.section:nth-of-type(5) .faq-list"
+          ]
+        },
+        {
+          "name": "hero-atwcta",
+          "instances": [
+            "#main-content > section.section.inverse-section .grid-layout"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc1",
+          "name": "Hero intro",
+          "selector": "#main-content > header.section.secondary-section",
+          "style": "grey",
+          "blocks": ["hero-atwintro"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc2",
+          "name": "Article header",
+          "selector": "#main-content > section.section:nth-of-type(1)",
+          "style": null,
+          "blocks": ["columns-atwart"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc3",
+          "name": "Snapshot gallery",
+          "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+          "style": "grey",
+          "blocks": ["cards-atwgal"],
+          "defaultContent": [
+            "#main-content > section.section.secondary-section:nth-of-type(2) > div.container > div.utility-text-align-center.utility-margin-bottom-8rem"
+          ]
+        },
+        {
+          "id": "rc4",
+          "name": "Testimonial voices",
+          "selector": "#main-content > section.section:nth-of-type(3)",
+          "style": null,
+          "blocks": ["tabs-atwvoices"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "Latest articles",
+          "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+          "style": "grey",
+          "blocks": ["cards-atwblog"],
+          "defaultContent": [
+            "#main-content > section.section.secondary-section:nth-of-type(4) > div.container > div.utility-text-align-center"
+          ]
+        },
+        {
+          "id": "rc6",
+          "name": "FAQ",
+          "selector": "#main-content > section.section:nth-of-type(5)",
+          "style": null,
+          "blocks": ["accordion-atwfaq"],
+          "defaultContent": [
+            "#main-content > section.section:nth-of-type(5) > div.container > div.grid-layout > div:nth-of-type(1)"
+          ]
+        },
+        {
+          "id": "rc7",
+          "name": "CTA banner",
+          "selector": "#main-content > section.section.inverse-section",
+          "style": "dark",
+          "blocks": ["hero-atwcta"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

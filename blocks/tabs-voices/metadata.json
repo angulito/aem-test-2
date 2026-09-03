@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-02T14:03:49.992Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "comfortable",
+    "purpose": "profile-testimonials",
+    "imagePattern": "portrait-and-avatar"
+  },
+  "contentPattern": {
+    "structure": "4 tabs; each panel = portrait image + name + role + quote; tab label = avatar + name + role",
+    "buttonCount": 0,
+    "imageCount": 8
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "profile/testimonial switchers",
+      "team member spotlights with quotes"
+    ],
+    "notSuitableFor": [
+      "simple text-only tabbed documentation"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-09-02T14:30:13.699Z"
+  },
+  "variantName": "tabs-voices",
+  "baseBlock": "tabs"
+}

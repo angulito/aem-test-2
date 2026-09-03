@@ -1,0 +1,134 @@
+{
+  "url": "https://wknd.site/us/en.html",
+  "documentPath": "/us/en",
+  "variantMapping": {
+    "carousel": "carousel-hero",
+    "columns": "columns-featured",
+    "cards": "cards-article",
+    "hero": "hero-teaser"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "visualStyle": "full-width edge-to-edge background photos with white content card overlay",
+      "sectionMetadata": null,
+      "sectionMetadataDecision": "SKIP - carousel/hero has full-bleed background image as intrinsic block design, not section container styling",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Rotating slider with 3 panels; each panel has a full-bleed background image, a heading, a paragraph, and one CTA button",
+          "decision": "BLOCK",
+          "blockName": "carousel-hero",
+          "blockVariant": "carousel-hero",
+          "reason": "Interactive rotating multi-panel component with indicators - requires carousel block decoration; obvious match"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc3",
+      "visualStyle": "light grey container, image left / text right",
+      "sectionMetadata": "style=grey",
+      "sectionMetadataDecision": "KEEP - solid grey background with visible section padding providing container context for the columns block",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Side-by-side: image left; right has eyebrow 'Featured Article', heading, paragraph, and 'Full Article' button",
+          "decision": "BLOCK",
+          "blockName": "columns-featured",
+          "blockVariant": "columns-featured",
+          "reason": "Side-by-side image + text layout requires structure; obvious match with columns block (2 columns)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc4-rc5-rc6",
+      "visualStyle": "white background, standard section padding",
+      "sectionMetadata": null,
+      "sectionMetadataDecision": "N/A - multiple sequences on default white background; no section-metadata needed",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Underlined section heading 'Recent Articles'",
+          "decision": "DEFAULT_CONTENT",
+          "reason": "Author types a heading normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 4 article cards (image, title, description, link)",
+          "decision": "BLOCK",
+          "blockName": "cards-article",
+          "blockVariant": "cards-article",
+          "reason": "Repeating structured card pattern; obvious match with cards block"
+        },
+        {
+          "sequenceNumber": 3,
+          "description": "Single 'All Articles' button",
+          "decision": "DEFAULT_CONTENT",
+          "reason": "Author types a link normally; button styling applied via link decoration"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc8-rc9",
+      "visualStyle": "heading on white, then full-width edge-to-edge hero teaser with background photo",
+      "sectionMetadata": null,
+      "sectionMetadataDecision": "SKIP - the hero teaser's full-bleed background image is intrinsic block design; heading is default content on white",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Underlined section heading 'Next Adventures'",
+          "decision": "DEFAULT_CONTENT",
+          "reason": "Author types a heading normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Full-width hero teaser: background image, heading 'Climbing New Zealand', paragraph, 'See Trip' button",
+          "decision": "BLOCK",
+          "blockName": "hero-teaser",
+          "blockVariant": "hero-teaser",
+          "reason": "Full-width banner with background image, heading and CTA - obvious match with hero block"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc11-rc12-rc13",
+      "visualStyle": "white background, standard section padding",
+      "sectionMetadata": null,
+      "sectionMetadataDecision": "N/A - multiple sequences on default white background; no section-metadata needed",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Section heading 'Where do you want to go?'",
+          "decision": "DEFAULT_CONTENT",
+          "reason": "Author types a heading normally"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 4 adventure cards (image, title, description, link)",
+          "decision": "BLOCK",
+          "blockName": "cards-article",
+          "blockVariant": "cards-article",
+          "reason": "Repeating structured card pattern; obvious match with cards block"
+        },
+        {
+          "sequenceNumber": 3,
+          "description": "Single 'All Trips' button",
+          "decision": "DEFAULT_CONTENT",
+          "reason": "Author types a link normally"
+        }
+      ]
+    }
+  ],
+  "blocksToUse": ["carousel-hero", "columns-featured", "cards-article", "hero-teaser"],
+  "blockStructures": {
+    "carousel-hero": "Each slide = one row; row contains image + text (heading, body, CTA)",
+    "columns-featured": "Single row with 2 columns: image column + content column",
+    "cards-article": "Each card = one row with 2 cells: image cell + text cell (title + description)",
+    "hero-teaser": "Single cell with background image and heading/text/CTA content"
+  }
+}

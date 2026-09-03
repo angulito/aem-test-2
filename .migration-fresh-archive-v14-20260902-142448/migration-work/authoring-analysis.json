@@ -1,0 +1,175 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "documentPath": "/index",
+  "analyzedAt": "2026-09-02",
+  "davidsModelNote": "Simple centered headings preceding a grid are kept as default content. Structured, repeating, or interactive content is mapped to blocks. Section hint 'block' is satisfied in every section (each contains at least one block).",
+  "variantMapping": {
+    "rc1": { "baseBlock": "hero", "variant": "hero-lookbook" },
+    "rc2": { "baseBlock": "columns", "variant": "columns-casestudy" },
+    "rc3": { "baseBlock": "cards", "variant": "cards-snapshot" },
+    "rc4": { "baseBlock": "tabs", "variant": "tabs-voices" },
+    "rc5": { "baseBlock": "cards", "variant": "cards-latest" },
+    "rc6": { "baseBlock": "accordion", "variant": "accordion-questions" },
+    "rc7": { "baseBlock": "hero", "variant": "hero-spotlight" }
+  },
+  "sections": [
+    {
+      "id": "rc1",
+      "index": 1,
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "sectionStyle": "light grey (secondary-section)",
+      "sectionMetadata": "keep (solid background with section padding, multi-element)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Large H1 heading, subheading, two CTA buttons and a cluster of three lifestyle images.",
+          "decision": "block",
+          "blockName": "hero-lookbook",
+          "blockVariant": "hero-lookbook",
+          "reason": "Prominent page-intro banner combining headline, subheading, CTAs and imagery. Hint=block. Distinct light-themed intro layout with an image cluster.",
+          "baseBlock": "hero"
+        }
+      ]
+    },
+    {
+      "id": "rc2",
+      "index": 2,
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "sectionStyle": "white (default)",
+      "sectionMetadata": "skip (single block, white/default background, no distinct section styling)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Side-by-side: large cover image on one side; breadcrumbs, H2 heading, and author/date/read-time byline on the other.",
+          "decision": "block",
+          "blockName": "columns-casestudy",
+          "blockVariant": "columns-casestudy",
+          "reason": "Two-column side-by-side layout (image + text). Obvious match with columns. Hint=block.",
+          "baseBlock": "columns"
+        }
+      ]
+    },
+    {
+      "id": "rc3",
+      "index": 3,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "sectionStyle": "light grey (secondary-section)",
+      "sectionMetadata": "keep (solid grey background with padding, multi-sequence)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered H2 heading ('Style in every snapshot') with supporting paragraph.",
+          "decision": "default-content",
+          "reason": "Author can type a heading and paragraph normally. Centering is a section/CSS concern."
+        },
+        {
+          "sequence": 2,
+          "description": "Responsive grid of eight square lifestyle images, no per-item text.",
+          "decision": "block",
+          "blockName": "cards-snapshot",
+          "blockVariant": "cards-snapshot",
+          "reason": "Repeating image-only grid (gallery). Maps to a cards image-gallery variant. Hint=block.",
+          "baseBlock": "cards"
+        }
+      ]
+    },
+    {
+      "id": "rc4",
+      "index": 4,
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "sectionStyle": "white (default)",
+      "sectionMetadata": "skip (single block, white/default background)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Tabbed interface with four switchable profile panels (photo, name, role, quote); tab buttons show avatar + name + role.",
+          "decision": "block",
+          "blockName": "tabs-voices",
+          "blockVariant": "tabs-voices",
+          "reason": "Interactive switchable content panels. Obvious match with tabs. Hint=block.",
+          "baseBlock": "tabs"
+        }
+      ]
+    },
+    {
+      "id": "rc5",
+      "index": 5,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "sectionStyle": "light grey (secondary-section)",
+      "sectionMetadata": "keep (solid grey background with padding, multi-sequence)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered H2 heading ('Latest articles') with supporting paragraph.",
+          "decision": "default-content",
+          "reason": "Author can type heading and paragraph normally."
+        },
+        {
+          "sequence": 2,
+          "description": "Grid of four article cards; each card links out and contains image, category tag, date, and title.",
+          "decision": "block",
+          "blockName": "cards-latest",
+          "blockVariant": "cards-latest",
+          "reason": "Repeating structured items with image + tag + date + title, each clickable. Maps to a cards article variant. Hint=block.",
+          "baseBlock": "cards"
+        }
+      ]
+    },
+    {
+      "id": "rc6",
+      "index": 6,
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "sectionStyle": "white (default)",
+      "sectionMetadata": "keep (multi-sequence section)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "H2 heading ('Got questions? We've got answers.') and supporting subheading.",
+          "decision": "default-content",
+          "reason": "Author can type heading and subheading normally."
+        },
+        {
+          "sequence": 2,
+          "description": "Expandable list of four question/answer items (details/summary).",
+          "decision": "block",
+          "blockName": "accordion-questions",
+          "blockVariant": "accordion-questions",
+          "reason": "Collapsible Q&A pairs. Obvious match with accordion. Hint=block.",
+          "baseBlock": "accordion"
+        }
+      ]
+    },
+    {
+      "id": "rc7",
+      "index": 7,
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "sectionStyle": "dark (inverse-section), full-bleed background image + overlay",
+      "sectionMetadata": "skip (single block; dark banner background is the block's own design, full-bleed background image)",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Full-width banner: background image with dark overlay, overlaid H1 heading, subheading, and one CTA button.",
+          "decision": "block",
+          "blockName": "hero-spotlight",
+          "blockVariant": "hero-spotlight",
+          "reason": "High-impact full-bleed banner with background image and overlaid text/CTA. Maps to a dark hero banner variant. Hint=block. Distinct from the light intro hero (rc1).",
+          "baseBlock": "hero"
+        }
+      ]
+    }
+  ],
+  "blocksToUse": ["hero-lookbook", "hero-spotlight", "columns-casestudy", "cards-snapshot", "cards-latest", "tabs-voices", "accordion-questions"],
+  "step3eValidation": {
+    "rc2": "single columns block on white — skip section-metadata",
+    "rc4": "single tabs block on white — skip section-metadata",
+    "rc7": "single hero block, full-bleed dark background image is block-specific design — skip section-metadata",
+    "note": "rc1, rc3, rc5, rc6 are multi-sequence or grey container sections — keep section-metadata"
+  }
+}

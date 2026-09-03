@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.wknd-trendsetters.site/"
+      ],
+      "representativeUrl": "https://www.wknd-trendsetters.site/",
+      "description": "WKND Trendsetters homepage: hero intro, case-study feature, snapshot gallery, profile tabs, latest articles, FAQ accordion, and full-bleed CTA banner",
+      "urlPattern": "/",
+      "blocks": [
+        {
+          "name": "hero-wintro15",
+          "instances": [
+            "#main-content > header.section.secondary-section"
+          ]
+        },
+        {
+          "name": "columns-wcase15",
+          "instances": [
+            "#main-content > section.section:nth-of-type(1)"
+          ]
+        },
+        {
+          "name": "section-snapshot-grey",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(2)"
+          ],
+          "section": "grey"
+        },
+        {
+          "name": "cards-wsnap15",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(2) > div.container > div.grid-layout.desktop-4-column.tablet-2-column-1.mobile-portrait-1-column.grid-gap-sm"
+          ]
+        },
+        {
+          "name": "tabs-wprofile15",
+          "instances": [
+            "#main-content > section.section:nth-of-type(3) > div.container > div.tabs-wrapper"
+          ]
+        },
+        {
+          "name": "section-articles-grey",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(4)"
+          ],
+          "section": "grey"
+        },
+        {
+          "name": "cards-wblog15",
+          "instances": [
+            "#main-content > section.section.secondary-section:nth-of-type(4) > div.container > div.grid-layout.desktop-4-column.tablet-2-column-1.mobile-portrait-1-column.grid-gap-md"
+          ]
+        },
+        {
+          "name": "accordion-wfaq15",
+          "instances": [
+            "#main-content > section.section:nth-of-type(6) > div.container > div.faq-list",
+            ".faq-list"
+          ]
+        },
+        {
+          "name": "hero-wcta15",
+          "instances": [
+            "#main-content > section.section.inverse-section"
+          ]
+        }
+      ]
+    }
+  ]
+}

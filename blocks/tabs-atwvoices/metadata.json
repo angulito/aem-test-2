@@ -1,0 +1,39 @@
+{
+  "variantName": "tabs-atwvoices",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-09-03T13:37:44.008Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "originPage": "WKND Trendsetters home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "testimonials",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "tab label (avatar+name+role) | panel (portrait + name + role + quote)",
+    "buttonCount": 0,
+    "imageCount": 8
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "testimonial/voices switchers",
+      "people profiles in switchable panels"
+    ],
+    "notSuitableFor": [
+      "static content",
+      "simple accordions"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T13:37:44.008Z"
+  }
+}

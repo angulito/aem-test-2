@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-atwgal",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-09-03T13:37:44.008Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "originPage": "WKND Trendsetters home page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image-only grid items",
+    "buttonCount": 0,
+    "imageCount": 8
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "image galleries",
+      "photo grids without captions"
+    ],
+    "notSuitableFor": [
+      "cards with tags/titles/descriptions",
+      "side-by-side layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-03T13:37:44.008Z"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-02T14:03:49.912Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "blog-hero",
+    "imagePattern": "cluster"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + 2 CTAs + 3-image cluster",
+    "buttonCount": 2,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "editorial landing pages with a photo cluster",
+      "fashion/lifestyle blog intros"
+    ],
+    "notSuitableFor": [
+      "full-bleed dark banners with background image"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-02"
+  },
+  "variantName": "hero-lookbook",
+  "baseBlock": "hero"
+}

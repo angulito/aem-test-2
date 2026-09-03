@@ -1,0 +1,13 @@
+/* tabs-profile — extracted from source computed styles */
+
+/* tablist: grid, 4-col desktop / 2-col tablet / 1-col mobile, gap 16px */
+/* tab (unselected): padding 16px; border-radius 16px; border 1px solid rgb(232,232,232); bg rgb(239,239,239) */
+/* tab (selected): bg rgb(245,245,245); border 1px solid rgb(0,0,0) */
+/* tab name strong: 14px / 700 / line-height 22.4px */
+
+/* panel inner: display grid; grid-template-columns 1fr 1fr; gap 16px; align-items center */
+/* panel image: width 100%; object-fit cover; border-radius 20px; ~568x426 (4:3) */
+/* panel name strong: 20px / 700 / line-height 32px / Instrument Sans / text-transform none */
+/* panel role: 20px / 400 */
+/* panel quote p: 20px / 400 / line-height 32px / margin 0 0 48px */
+/* name group margin-bottom: ~space-xl */

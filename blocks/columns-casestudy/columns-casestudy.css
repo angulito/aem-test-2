@@ -1,0 +1,33 @@
+.columns-casestudy > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-casestudy img {
+  width: 100%;
+}
+
+.columns-casestudy > div > div {
+  order: 1;
+}
+
+.columns-casestudy > div > .columns-casestudy-img-col {
+  order: 0;
+}
+
+.columns-casestudy > div > .columns-casestudy-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-casestudy > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-casestudy > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

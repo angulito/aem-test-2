@@ -1,0 +1,74 @@
+/* Block: columns-article — image beside article header (breadcrumbs, heading, byline) */
+/* Values extracted from source computed styles. */
+
+.columns-article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* image column */
+.columns-article > div > .columns-article-img-col {
+  order: 0;
+}
+
+.columns-article img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* text column */
+.columns-article > div > div:not(.columns-article-img-col) {
+  order: 1;
+}
+
+/* breadcrumbs (first paragraph with links) */
+.columns-article > div > div:not(.columns-article-img-col) > p:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 32px;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+.columns-article > div > div:not(.columns-article-img-col) > p:first-child a:any-link {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.columns-article > div > div:not(.columns-article-img-col) > p:first-child a:first-child {
+  color: var(--text-color);
+}
+
+/* heading */
+.columns-article h2 {
+  margin: 0;
+  font-size: var(--heading-font-size-xxl);
+  line-height: 1.1;
+}
+
+/* byline meta (paragraphs after the heading) */
+.columns-article > div > div:not(.columns-article-img-col) > p:not(:first-child) {
+  margin: 16px 0 0;
+  font-size: var(--body-font-size-xs);
+  line-height: 25.6px;
+  color: var(--link-color);
+}
+
+@media (width >= 900px) {
+  .columns-article > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .columns-article > div > div {
+    order: unset;
+  }
+}

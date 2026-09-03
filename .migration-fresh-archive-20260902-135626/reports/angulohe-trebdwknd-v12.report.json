@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.wknd-trendsetters.site/",
+  "path": "angulohe-trebdwknd-v12",
+  "timestamp": "2026-09-02T10:20:28.963Z",
+  "title": "WKND Trendsetters - Fresh Looks, Bold Stories, Real Life",
+  "template": "home",
+  "blocks": [
+    "hero-intro",
+    "columns-article",
+    "cards-gallery",
+    "tabs-profile",
+    "cards-article",
+    "accordion-faq",
+    "hero-banner"
+  ]
+}

@@ -1,0 +1,107 @@
+/* cards-article — 4-card article grid. Values from source computed styles. */
+
+.cards-article > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cards-article > ul > li {
+  margin: 0;
+  border: 1px solid rgb(232 232 232);
+  border-radius: 20px;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+/* whole card is a link */
+.cards-article .cards-article-card-link {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.cards-article .cards-article-card-link:hover {
+  text-decoration: none;
+}
+
+/* image */
+.cards-article .cards-article-card-image {
+  line-height: 0;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.cards-article .cards-article-card-image img,
+.cards-article .cards-article-card-image .cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* body */
+.cards-article .cards-article-card-body {
+  padding: 24px;
+  text-align: start;
+}
+
+/* meta row: category pill + date */
+.cards-article .article-card-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+}
+
+.cards-article .article-card-meta .tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background-color: rgb(244 254 139);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.cards-article .article-card-meta .date {
+  color: var(--link-color);
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+/* title */
+.cards-article .cards-article-card-body h3 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.8px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+/* tablet: 2 columns */
+@media (width >= 600px) {
+  .cards-article > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop: 4 columns */
+@media (width >= 900px) {
+  .cards-article > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "template": "home",
+  "documentPath": "/index",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "style": "light (secondary-section, solid off-white background)",
+      "overview": "Page hero: large heading, subheading, two CTA buttons on the left; cluster of three cover images on the right",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Large heading 'Fresh looks, bold stories, real life', subheading paragraph, and two buttons (primary 'See case', secondary 'All stories') on the left; a stacked cluster of three cover images (hip-hop dance, family vacation, music concert) on the right — arranged as a side-by-side intro hero"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc2",
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "style": "light (default section, white background)",
+      "overview": "Featured article intro: large image on the left, breadcrumbs + heading + author/date meta on the right",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Side-by-side layout: cover image (3x2, adventure spots) on the left; on the right a breadcrumb trail (Home > Case studies), h2 heading 'Fresh looks, bold moves, real stories', and byline metadata (By Taylor Brooks, June 12 2024, 4 min read)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc3",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "style": "light (secondary-section, off-white background)",
+      "overview": "Photo gallery: centered heading + subtext, followed by a 4-column grid of 8 square images",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered heading 'Style in every snapshot' and paragraph 'Peek the latest looks in action'"
+        },
+        {
+          "sequence": 2,
+          "description": "4-column (tablet 2-col, mobile 1-col) grid of 8 square (1x1) cover images, no captions or text"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc4",
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "style": "light (default section, white background)",
+      "overview": "Testimonial tabs: switchable profile panels (portrait + name/role + quote) with a 4-item tab menu of avatars",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Tabbed testimonial component: four switchable panels, each with a large portrait image, a name, a role, and a quote; the tab navigation is a 4-column menu where each tab shows an avatar thumbnail, name, and role (Alex Rivera, Taylor Kim, Jordan Ellis, Morgan Blake)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc5",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "style": "light (secondary-section, off-white background)",
+      "overview": "Latest articles: centered heading + subtext, then a 4-column grid of article cards (image, category tag, date, title), each linked",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Centered heading 'Latest articles' and paragraph 'Fresh looks, bold moves'"
+        },
+        {
+          "sequence": 2,
+          "description": "4-column grid of 4 linked article cards, each with a top image, a category tag, a date, and a heading (Tennis style redefined / Sunkissed and effortless / Party fits that pop / Game on, style up)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "id": "rc6",
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "style": "light (default section, white background)",
+      "overview": "FAQ: heading + subheading on the left, an expandable list of question/answer items on the right",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Heading 'Got questions? We've got answers.' and subheading 'Fashion FAQs, answered fast' on the left; a list of four expandable question/answer accordion items on the right (details/summary pattern)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "id": "rc7",
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "style": "dark (inverse-section, full-width background image with dark overlay)",
+      "overview": "Closing CTA banner: full-width background image with dark overlay, heading + subheading + single button",
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Full-width card with a background image and dark overlay; overlaid content is a heading 'Fresh looks, bold stories, real life', a subheading paragraph, and a single inverse button 'See more'"
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localVanillaBlocks": ["accordion", "cards", "columns", "hero", "tabs", "fragment", "header", "footer"],
+    "existingCustomVariants": [
+      {"name": "accordion-faq", "base": "accordion", "vc": {"colorScheme": "light", "density": "wide", "purpose": "faq", "imagePattern": "noimg"}},
+      {"name": "accordion-questions", "base": "accordion", "vc": {"colorScheme": "light", "density": "comfortable", "purpose": "faq", "imagePattern": "noimg"}},
+      {"name": "cards-article", "base": "cards", "vc": {"colorScheme": "light", "density": "wide", "purpose": "article-listing", "imagePattern": "large"}},
+      {"name": "cards-gallery", "base": "cards", "vc": {"colorScheme": "light", "density": "compact", "purpose": "photo-gallery", "imagePattern": "grid-noimgtext"}},
+      {"name": "cards-latest", "base": "cards", "vc": {"colorScheme": "light", "density": "comfortable", "purpose": "article-list", "imagePattern": "top-image"}},
+      {"name": "cards-snapshot", "base": "cards", "vc": {"colorScheme": "light", "density": "tight", "purpose": "image-gallery", "imagePattern": "square-grid"}},
+      {"name": "columns-article", "base": "columns", "vc": {"colorScheme": "light", "density": "wide", "purpose": "article-meta", "imagePattern": "large"}},
+      {"name": "columns-casestudy", "base": "columns", "vc": {"colorScheme": "light", "density": "comfortable", "purpose": "article-intro", "imagePattern": "large"}},
+      {"name": "hero-banner", "base": "hero", "vc": {"colorScheme": "dark", "density": "spacious", "purpose": "cta-banner", "imagePattern": "background-overlay"}},
+      {"name": "hero-intro", "base": "hero", "vc": {"colorScheme": "light", "density": "spacious", "purpose": "intro-hero", "imagePattern": "collage"}},
+      {"name": "hero-lookbook", "base": "hero", "vc": {"colorScheme": "light", "density": "spacious", "purpose": "blog-hero", "imagePattern": "cluster"}},
+      {"name": "hero-spotlight", "base": "hero", "vc": {"colorScheme": "dark", "density": "spacious", "purpose": "cta-banner", "imagePattern": "background"}},
+      {"name": "tabs-profile", "base": "tabs", "vc": {"colorScheme": "light", "density": "spacious", "purpose": "testimonial", "imagePattern": "portrait"}},
+      {"name": "tabs-voices", "base": "tabs", "vc": {"colorScheme": "light", "density": "comfortable", "purpose": "profile-testimonials", "imagePattern": "portrait-and-avatar"}}
+    ]
+  }
+}

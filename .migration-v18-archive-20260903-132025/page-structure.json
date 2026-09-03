@@ -1,0 +1,132 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "documentPath": "/index",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "id": "rc1",
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "styling": "light grey background (secondary-section)",
+      "hasBg": true,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large heading, subheading paragraph, and two call-to-action buttons on the left; a vertical stack of three cover images on the right (two-column intro hero layout)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "id": "rc2",
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "styling": "white/default background",
+      "hasBg": false,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Side-by-side layout: large cover image on the left; on the right a breadcrumb trail, a heading, and author/date/read-time meta text"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "id": "rc3",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "styling": "light grey background (secondary-section)",
+      "hasBg": true,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading and short paragraph intro"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Four-column grid of eight square images (image-only gallery, no captions)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "id": "rc4",
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "styling": "white/default background",
+      "hasBg": false,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Tabbed content switcher: four selectable people (avatar + name + role) that reveal a testimonial panel with a large image, name, role, and quote"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "id": "rc5",
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "styling": "light grey background (secondary-section)",
+      "hasBg": true,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading and short paragraph intro"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Four-column grid of article cards, each with an image, a category tag, a date, and a heading (linked)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "id": "rc6",
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "styling": "white/default background",
+      "hasBg": false,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading and subheading intro (left column of a two-column layout)"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Expandable FAQ list of four question/answer pairs (details/summary accordion)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "id": "rc7",
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "styling": "dark/inverse background (inverse-section); full-bleed background image with dark overlay",
+      "hasBg": true,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Full-width CTA banner: background image with dark overlay, large heading, paragraph, and a single call-to-action button"
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localBlocks": [
+      "cards", "columns", "hero", "tabs (via variants)", "accordion (via variants)",
+      "fragment", "header", "footer",
+      "plus prior-migration variants (hero-wintro15, cards-wblog15, etc.) - NOT reused per fresh-migration instruction"
+    ],
+    "blockCollectionAvailable": [
+      { "name": "hero", "purpose": "Large heading, text, buttons for page intro / CTA banner" },
+      { "name": "cards", "purpose": "Grid of items with images/text" },
+      { "name": "columns", "purpose": "Side-by-side content layout" },
+      { "name": "tabs", "purpose": "Switchable content panels" },
+      { "name": "accordion", "purpose": "Expandable Q&A sections" },
+      { "name": "carousel", "purpose": "Rotating image/content displays" },
+      { "name": "quote", "purpose": "Highlighted testimonials" }
+    ]
+  }
+}

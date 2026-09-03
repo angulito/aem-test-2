@@ -1,0 +1,47 @@
+.hero-atwcta-container .hero-atwcta-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-atwcta {
+  position: relative;
+  padding: 40px 24px;
+  min-height: 300px;
+}
+
+.hero-atwcta h1,
+.hero-atwcta h2,
+.hero-atwcta h3,
+.hero-atwcta h4,
+.hero-atwcta h5,
+.hero-atwcta h6,
+.hero-atwcta p {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--background-color);
+}
+
+.hero-atwcta.no-image * {
+  color: var(--text-color);
+}
+
+.hero-atwcta picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero-atwcta img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width >= 900px) {
+  .hero-atwcta {
+    padding: 40px 32px;
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "url": "https://www.wknd-trendsetters.site/",
+  "template": "home",
+  "documentPath": "/index",
+  "analyzedAt": "2026-09-03",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "selector": "#main-content > header.section.secondary-section",
+      "hint": "block",
+      "background": "light/grey (secondary-section)",
+      "overview": "Hero intro: large heading, subheading paragraph, two CTA buttons on the left; three stacked/cover images on the right",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large heading 'Fresh looks, bold stories, real life', subheading paragraph, two buttons ('See case', 'All stories'), and a group of three cover images displayed alongside",
+          "contentType": "block-candidate",
+          "notes": "Split layout with intro copy + image cluster; intrinsic hero styling"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "selector": "#main-content > section.section:nth-of-type(1)",
+      "hint": "block",
+      "background": "white (section)",
+      "overview": "Case-study feature row: large image on one side; breadcrumbs, heading, author byline and read-time meta on the other",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Cover image (3x2) beside a column containing breadcrumbs (Home / Case studies), heading 'Fresh looks, bold moves, real stories', author 'Taylor Brooks', date 'June 12, 2024', '4 min read'",
+          "contentType": "block-candidate",
+          "notes": "Two-column side-by-side layout of image + article metadata"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(2)",
+      "hint": "block",
+      "background": "light/grey (secondary-section)",
+      "overview": "'Style in every snapshot' centered heading + subtitle, then a 4-column grid of 8 square images",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Style in every snapshot' with paragraph 'Peek the latest looks in action'",
+          "contentType": "default-content-candidate",
+          "notes": "Intro copy for the gallery"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 8 square (1x1) cover images",
+          "contentType": "block-candidate",
+          "notes": "Image-only gallery grid, 4 columns desktop"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "selector": "#main-content > section.section:nth-of-type(3)",
+      "hint": "block",
+      "background": "white (section)",
+      "overview": "Tabbed testimonial/profile switcher: active panel shows a portrait + name, role and quote; tab menu of four people each with avatar, name, role",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Four switchable panels (Alex Rivera, Taylor Kim, Jordan Ellis, Morgan Blake) each with a portrait image, name, role and quote; controlled by a tab menu of avatar buttons",
+          "contentType": "block-candidate",
+          "notes": "Interactive tabs component with avatar-driven navigation"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "selector": "#main-content > section.section.secondary-section:nth-of-type(4)",
+      "hint": "block",
+      "background": "light/grey (secondary-section)",
+      "overview": "'Latest articles' centered heading + subtitle, then a 4-column grid of article cards each with image, category tag, date and title",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Latest articles' with paragraph 'Fresh looks, bold moves'",
+          "contentType": "default-content-candidate",
+          "notes": "Intro copy for the article grid"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Grid of 4 article cards, each with image, category tag (e.g. 'Casual Cool'), date and heading; whole card is a link",
+          "contentType": "block-candidate",
+          "notes": "Repeating card pattern linking to blog posts"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "selector": "#main-content > section.section:nth-of-type(5)",
+      "hint": "block",
+      "background": "white (section)",
+      "overview": "FAQ: heading + subheading on one side, expandable question/answer list on the other",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading \"Got questions? We've got answers.\" with subheading 'Fashion FAQs, answered fast'",
+          "contentType": "default-content-candidate",
+          "notes": "Intro copy for the FAQ"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "List of four expandable question/answer pairs (details/summary elements)",
+          "contentType": "block-candidate",
+          "notes": "Interactive accordion of FAQ items"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "selector": "#main-content > section.section.inverse-section",
+      "hint": "block",
+      "background": "dark (inverse-section) with full-bleed background image + overlay",
+      "overview": "Full-width dark CTA banner: background image with overlay, heading, subheading and a single button",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Background image with dark overlay, heading 'Fresh looks, bold stories, real life', subheading paragraph, single 'See more' button",
+          "contentType": "block-candidate",
+          "notes": "Full-bleed hero/CTA with intrinsic dark background image styling"
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localBlocks": [
+      "accordion-faq", "accordion-questions", "cards", "cards-article", "cards-gallery",
+      "cards-latest", "cards-snapshot", "columns", "columns-article", "columns-casestudy",
+      "footer", "fragment", "header", "hero", "hero-banner", "hero-intro", "hero-lookbook",
+      "hero-spotlight", "tabs-profile", "tabs-voices"
+    ],
+    "note": "FRESH migration into angulohe-trebdwknd-v15: existing project blocks must NOT be reused. All-new variants with distinct names are created for every block on the page.",
+    "blockCollectionAvailable": [
+      { "name": "hero", "purpose": "Large heading, text, buttons for page intro" },
+      { "name": "cards", "purpose": "Grid of items with images/text" },
+      { "name": "columns", "purpose": "Side-by-side content layout" },
+      { "name": "tabs", "purpose": "Switchable content panels" },
+      { "name": "accordion", "purpose": "Expandable Q&A sections" }
+    ]
+  }
+}

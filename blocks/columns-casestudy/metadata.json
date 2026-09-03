@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "created": "2026-09-02T14:03:49.943Z",
+  "sourceContext": {
+    "originUrl": "https://www.wknd-trendsetters.site/",
+    "blockPosition": "upper"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "comfortable",
+    "purpose": "article-intro",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image column + text column (breadcrumbs + heading + byline)",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "article/case-study intros with an image beside title and byline"
+    ],
+    "notSuitableFor": [
+      "equal-weight multi-column feature grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-09-02T14:30:13.699Z"
+  },
+  "variantName": "columns-casestudy",
+  "baseBlock": "columns"
+}
